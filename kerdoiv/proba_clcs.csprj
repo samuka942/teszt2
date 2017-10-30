@@ -1,0 +1,26 @@
+<codestructure version="5.11">
+<phptree>
+<treenode node="interface_questions.php;PHP:PHP Include;C:\wamp\www\mnds\index.php;f20;7;43;7;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+</treenode>
+<treenode node="sql;PHP:Class Name;C:\wamp\www\mnds\interface_oop_test.php;f1;1;2;36;;;;vpos;;v;;r;;d10,1;;b0,0;;m">
+<treenode node="connection_mysql;PHP:Function Name;C:\wamp\www\mnds\interface_oop_test.php;f2;3;3;6;;;;vpos;;v;;r;;d51,3;;b0,0;;mlocalhost;;puser;;ppass;;p">
+</treenode>
+<treenode node="select_database;PHP:Function Name;C:\wamp\www\mnds\interface_oop_test.php;f2;8;3;11;;;;vpos;;v;;r;;d37,8;;b0,0;;mdatabase;;p">
+</treenode>
+<treenode node="select_table;PHP:Function Name;C:\wamp\www\mnds\interface_oop_test.php;f2;13;3;16;;;;vpos;;v;;r;;d31,13;;b0,0;;mtable;;p">
+</treenode>
+<treenode node="select_table_what;PHP:Function Name;C:\wamp\www\mnds\interface_oop_test.php;f2;18;3;21;;;;vpos;;v;;r;;d46,18;;b0,0;;mtable;;pwhat;;p">
+</treenode>
+<treenode node="select_table_where;PHP:Function Name;C:\wamp\www\mnds\interface_oop_test.php;f2;23;3;26;;;;vpos;;v;;r;;d54,23;;b0,0;;mtable;;pwhat;;pwhere;;p">
+</treenode>
+<treenode node="sql_to_array;PHP:Function Name;C:\wamp\www\mnds\interface_oop_test.php;f2;28;3;34;;;;vpos;;v;;r;;d29,28;;b0,0;;msql;;p">
+</treenode>
+</treenode>
+<treenode node="working;PHP:Class Name;C:\wamp\www\mnds\interface_oop_test.php;f1;38;2;70;;;;vpos;;v;;r;;d14,38;;b0,0;;m">
+<treenode node="sql_to_array;PHP:Function Name;C:\wamp\www\mnds\Codelobster0.php;f2;40;3;46;;;;vpos;;v;;r;;d29,32;;b0,0;;msql;;p">
+</treenode>
+<treenode node="tables_echo;PHP:Function Name;C:\wamp\www\mnds\Codelobster0.php;f2;48;9;76;;C:\wamp\www\mnds\interface_oop_test.php;f2;40;9;68;;C:\wamp\www\mnds\interface_oop_test.php;f2;40;9;68;;C:\wamp\www\mnds\interface_oop_test.php;f2;40;9;68;;;;vpos;;v;;r;;d48,40;;b0,0;;marray_q;;parray_a;;pmatch;;p">
+</treenode>
+</treenode>
+</phptree>
+</codestructure>

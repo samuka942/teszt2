@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="C:\wamp\www\mnds\proba.clpprj">
+	<settings><PM_URL><![CDATA[http://localhost/mnds/]]></PM_URL><PM_HOME_URL><![CDATA[http://localhost/mnds/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
+	</lastopfiles>
+	<errors version="5.11">
+	</errors>
+	<cakedata>
+	</cakedata>
+	<dplmenupath>
+	</dplmenupath><laravael>
+	</laravael><smartyassings>
+	</smartyassings><twigtemplate>
+	</twigtemplate><yiidata>
+	</yiidata>
+	<todoblock>
+	</todoblock>
+	<dbgurls>
+	</dbgurls>
+	<filescache>
+		<file name="C:\wamp\www\mnds\nbproject\private\private.xml" crc="1492628452"/>
+		<file name="C:\wamp\www\mnds\nbproject\project.xml" crc="1490293210"/>
+		<file name="C:\wamp\www\mnds\test.php" crc="1495544725"/>
+		<file name="C:\wamp\www\mnds\saving.php" crc="1495545547"/>
+		<file name="C:\wamp\www\mnds\results.php" crc="1492620248"/>
+		<file name="C:\wamp\www\mnds\results.css" crc="1493102810"/>
+		<file name="C:\wamp\www\mnds\interface_questions.php" crc="1495545637"/>
+		<file name="C:\wamp\www\mnds\interface_oop_test.php" crc="1494953849"/>
+		<file name="C:\wamp\www\mnds\index.php" crc="1495545538"/>
+		<file name="C:\wamp\www\mnds\index.css" crc="1493108831"/>
+	</filescache>
+</project>
