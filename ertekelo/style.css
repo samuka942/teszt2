@@ -1,0 +1,89 @@
+.cimke{
+	font-weight: bold;
+	color: red;
+}
+body{
+	background-color: black;
+	color: white;
+}
+h2{
+	font-style: italic;
+	font-size: 46px;
+}
+table{
+	border-style: ridge;
+	color: #00ff00;
+	font-size: 22px;
+}
+select{
+	background-color: lightblue;
+	width: 75%;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	font-size: 18px;
+}
+#ref{
+	background-color: orange;
+	color: blue;
+}
+input::-webkit-inner-spin-button{
+	display: none;
+}
+input::-webkit-calendar-picker-indicator{
+	display: inline-table;
+}
+#_datum{
+	background-color: lightblue;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	box-shadow: none;
+	padding: 2px;
+	font-size: 18px;
+	display: list-item;
+}
+input{
+	background-color: lightblue;
+	font-size: 18px;
+	padding: 3px;
+	border-radius: 15px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-style: hidden;
+}
+input:focus{
+	outline: none;
+}
+select:focus{
+	outline: none;
+}
+#fejl_terv{
+	width: 30px;
+	height: 30px;
+	position: relative;
+	border-radius: 50px;
+	margin: 5px auto;
+	background-color: green;
+  	box-shadow: none;
+  	border-style: hidden;
+}
+textarea{
+	background-color: #ff4ae9;
+	color: white;
+	border-radius: 15px;
+	border-style: hidden;
+}
+textarea:focus{
+	outline: none;
+}
+#but{
+	background-color: aqua;
+	border-radius: 30px;
+	padding: 6px;
+	font-size: 22px;
+	font-weight: bold;
+	color: #c10000;
+	font-size: 22px;
+	
+}

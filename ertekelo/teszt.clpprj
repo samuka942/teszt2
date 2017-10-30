@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="C:\wamp\www\teszt\teszt.clpprj">
+	<settings><PM_URL><![CDATA[http://localhost/teszt/]]></PM_URL><PM_HOME_URL><![CDATA[http://localhost/teszt/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";C:\wamp\www\teszt\teszt.js;"/><added value=""/><lastopfiles>
+		<file name="C:\wamp\www\teszt\foold.html"/>
+		<file name="C:\wamp\www\teszt\teszt.php"/>
+		<file name="C:\wamp\www\teszt\interface_ertekelolap.php"/>
+		<file name="C:\wamp\www\teszt\ertek_szamol.js"/>
+		<file name="C:\wamp\www\teszt\saving.php"/>
+		<file name="C:\wamp\www\teszt\json.php"/>
+	</lastopfiles>
+	<errors version="5.11">
+		<errfile name="C:\wamp\www\teszt\interface_ertekelolap.php">
+			<error val="48;130;57;130;2002;1;"/>
+			<error val="48;134;57;134;2002;1;"/>
+			<error val="54;138;63;138;2002;1;"/>
+			<error val="62;142;71;142;2002;1;"/>
+			<error val="70;123;79;123;2002;1;"/>
+			<error val="74;111;83;111;2002;1;"/>
+			<error val="72;99;81;99;2002;1;"/>
+			<error val="56;54;65;54;2002;1;"/>
+			<error val="50;66;59;66;2002;1;"/>
+			<error val="52;70;61;70;2002;1;"/>
+		</errfile>
+		<errfile name="C:\wamp\www\teszt\foold.html">
+			<error val="73;203;82;203;2002;1;"/>
+			<error val="48;260;57;260;2002;1;"/>
+			<error val="48;264;57;264;2002;1;"/>
+			<error val="54;268;63;268;2002;1;"/>
+			<error val="62;272;71;272;2002;1;"/>
+			<error val="70;253;79;253;2002;1;"/>
+			<error val="74;234;83;234;2002;1;"/>
+			<error val="56;117;65;117;2002;1;"/>
+			<error val="50;129;59;129;2002;1;"/>
+			<error val="52;133;61;133;2002;1;"/>
+		</errfile>
+	</errors>
+	<cakedata>
+	</cakedata>
+	<dplmenupath>
+	</dplmenupath><laravael>
+	</laravael><smartyassings>
+	</smartyassings><twigtemplate>
+	</twigtemplate><yiidata>
+	</yiidata>
+	<todoblock>
+	</todoblock>
+	<dbgurls>
+	</dbgurls>
+	<filescache>
+		<file name="C:\wamp\www\teszt\teszt.php" crc="1498049432"/>
+		<file name="C:\wamp\www\teszt\saving.php" crc="1497999216"/>
+		<file name="C:\wamp\www\teszt\json.php" crc="1498049785"/>
+		<file name="C:\wamp\www\teszt\interface_ertekelolap.php" crc="1497999919"/>
+		<file name="C:\wamp\www\teszt\foold.html" crc="1497999643"/>
+		<file name="C:\wamp\www\teszt\ertek_szamol.js" crc="1497999722"/>
+	</filescache>
+</project>

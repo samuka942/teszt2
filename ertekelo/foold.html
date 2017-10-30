@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>TESZT</title>
+		<link rel="stylesheet" type="text/css" href="../mndsblog.css">
+		<script lang="JavaScript">
+			var correct;
+			
+			function _date(){
+				
+				var datum = document.getElementById('_datum').value.toString();
+			
+				var replaced;
+			
+				replaced = datum.replace("-","_");
+			
+				correct = replaced.replace("-","_");
+			}
+		
+		
+			function szamol(){				
+				with(document.teszt){
+					
+					var min_ered = (
+						(tagol.value*1)+
+						(nyelvtan.value*1)+
+						(utalas.value*1)+
+						(cimke_minoseg.value*1)+
+						(cimke_mennyiseg.value*1)+
+						(cimke_relev.value*1)+
+						(kategorizal.value*1)+
+						(sablon_kovet.value*1))/22;
+						
+					minoseg_vege.value = Math.round((min_ered*100));
+					
+					var hatar_ered = (
+						(elkeszul_ido.value*1)+
+						(wordpress_idozit.value*1)+
+						(relevans_idosav.value*1)+
+						(relevans_tartalom.value*1)+
+						(elore_irt.value*1))/8;
+					
+					hatarido_vege.value = Math.round((hatar_ered*100));
+					
+					var fejlod_ered = (
+						(fejlod_minoseg.value*1)+
+						(hiba_javit.value*1))/10;
+						
+					fejlod_vege.value = Math.round((fejlod_ered*100));
+					
+					var vege_ered = (
+						(fejlod_ered*0.5)+
+						(hatar_ered*1.25)+
+						(min_ered*1.25))/3;
+					
+					if((alairas.value * 1) == 0 || (naptar.value * 1 ) == 0 || (akadaly.value * 1) == 0){
+						
+						krit.value = "Igen";
+						vege.value = 0;
+						no_krit.value = Math.round((vege_ered*100));
+					}
+					else{
+						krit.value = "Nem";
+						vege.value = Math.round((vege_ered*100));
+						no_krit.value = "0";
+					}
+					
+					if(krit.value == "Igen"){
+						document.getElementById("krit").style.backgroundColor = "red";
+					}
+					else{
+						document.getElementById("krit").style.backgroundColor = "lightgreen";
+					}
+					
+					
+					if(vege_ered == 1){
+						kovetelmeny.value = "Igen, tökéletesen!";
+					}
+					else if(vege_ered < 1 && vege_ered > 0.9){
+						kovetelmeny.value = "Igen, hibák mennyisége elhanyagolható!";
+					}
+					else if(vege_ered < 0.9 && vege_ered > 0.8){
+						kovetelmeny.value = "Igen, hibák mennyisége nem kritikus szintű!";
+					}
+					else if(vege_ered < 0.8 && vege_ered > 0.7){
+						kovetelmeny.value = "Igen, hibák mennyisége elégséges!";
+					}
+					else if(vege_ered < 0.7 && vege_ered > 0.6){
+						kovetelmeny.value = "Igen, hibák mennyisége a határértéken van!";
+					}
+					else if(vege_ered < 0.6 && vege_ered > 0.5){
+						kovetelmeny.value = "Nem, hibák mennyisége túlságosan nagy!";
+					}
+					else if(vege_ered < 0.5 && vege_ered > 0.3){
+						kovetelmeny.value = "Nem, újabb azonnali értékelés javasolt!";
+					}
+					else if(vege_ered < 0.3 && vege_ered > 0.25){
+						kovetelmeny.value = "Nem, a cikk törlése, vagy átírása/átíratása javasolt!";
+					}
+					else if(vege_ered == 0){
+						kovetelmeny.value = "Kritikus hiba!";
+					}
+					
+					if(fejl_terv.checked==true){					
+						ref.value = "MND_"+"SzM"+"_"+"SGy"+"_"+correct+"_"+dbszam.value+"_"+"FT";
+					}
+					else{
+						ref.value = "MND_"+"SzM"+"_"+"SGy"+"_"+correct+"_"+dbszam.value;
+					}
+					
+				}
+			}
+		</script>
+	</head>
+	<body onchange="szamol()">
+		<form name="teszt" action="saving.php" method="POST">
+		<p>
+		<table>
+			<tr>
+				<td><label>Referencia szám</label></td>
+				<td><input type="text" name="ref" id="ref" size="40" readonly></td>
+			</tr>
+			<tr>
+				<td><label>Értékelő neve</label></td>
+				<td>Ide majd egy select lesz</td>
+			</tr>
+			<tr>
+				<td><label>Értékelt szerző neve</label></td>
+				<td>Ide majd egy select lesz</td>
+			</tr>
+			<tr>
+				<td><label>Értékelés dátuma</label></td>
+				<td><input type="date" id="_datum" name="datum" onchange="_date()"></td>
+			</tr>
+			<tr>
+				<td><label>Folyó napi értékelések száma</label></td>
+				<td><input type="text" name="dbszam" id="dbszam"></td>
+			</tr>
+			<tr>
+				<td><label>Fejlődési terv értékelés?</label></td>
+				<td><input type="checkbox" name="fejl_terv" id="fejl_terv"></td>
+			</tr>
+			<tr>
+				<td><label>Cikk címe</label></td>
+				<td><input type="text" name="cikk" ></td>
+			</tr>
+		</table>
+		<p>
+		<table>
+			<tr>
+				<td><label>Kritikus követelmények</label></td>
+				<td><label>Érték</label></td>
+			</tr>
+			<tr>
+				<td><label>Aláírás és Copyright információk helyesen beszúrva?</label></td>
+				<td><input type="text" name="alairas" id="alairas" value=0 ></td>
+			</tr>
+			<tr>
+				<td><label>Naptárbejegyzés UTC időzóna szerint létrehozva?</label></td>
+				<td><input type="text" name="naptar" id="naptar" value=0></td>
+			</tr>
+			<tr>
+				<td><label>További szerkesztők munkájának akadályozása?</label>
+				<td><input type="text" name="akadaly" id="akadaly" value=0></td>
+			</tr>
+		</table>
+		<p>
+		<table>
+			<tr>
+				<td><label>Minőségi követelmények</label></td>
+				<td><label>Érték</label></td>
+			</tr>
+			<tr>
+				<td><label>Tagolás, elrendezés</label></td>
+				<td><input type="text" name="tagol" id="tagol" value=0></td>
+			</tr>
+			<tr>
+				<td><label>Nyelvtani,- és gépelési hibák</label></td>
+				<td><input type="text" name="nyelvtan" id="nyelvtan" value=0></td>
+			</tr>
+			<tr>
+				<td><label>Előző, vagy következő tartalomra vonatkozó utalások</label></td>
+				<td><input type="text" name="utalas" id="utalas" value=0></td>
+			</tr>
+			<tr>
+				<td><label>Címkézés minősége</label></td>
+				<td><input type="text" name="cimke_minoseg" id="cimke_minoseg" value=0></td>
+			</tr>
+			<tr>
+				<td><label>Címkézés mennyisége</label></td>
+				<td><input type="text" name="cimke_mennyiseg" id="cimke_mennyiseg" value=0></td>
+			</tr>
+			<tr>
+				<td><label>Címkézés relevánssága</label></td>
+				<td><input type="text" name="cimke_relev" id="cimke_relev" value=0></td>
+			</tr>
+			<tr>
+				<td><label>Kategorizálás</label></td>
+				<td><input type="text" name="kategorizal" id="kategorizal" value=0></td>
+			</tr>
+			<tr>
+				<td><label>Sablon formátum követése</label></td>
+				<td><input type="text" name="sablon_kovet" id="sablon_kovet" value=0></td>
+			</tr>
+			<tr>
+				<td><label>Modul végső értéke</label></td>
+ 				<td><input type="text" name="minoseg_vege" id="minoseg_vege" value=0 readonly >%</td>
+			</tr>
+		</table>
+		</p>
+		<table>
+			<tr>
+				<td><label>Határidők</label></td>
+				<td><label>Érték</label></td>
+			</tr>
+			<tr>
+				<td><label>A cikk elkészítésének ideje</label></td>
+				<td><input type="text" name="elkeszul_ido" id="elkeszul_ido" value=0></td>
+			</tr>
+			<tr>
+				<td><label>A cikk (naptárbejegyzéssel megegyező ) időzítése a WordPress felületén</label></td>
+				<td><input type="text" name="wordpress_idozit" id="wordpress_idozit" value=0></td>
+			</tr>
+			<tr>
+				<td><label>Releváns tartalom az adott idősávban?</label></td>
+				<td><input type="text" name="relevans_idosav" id="relevans_idosav" value=0></td>
+			</tr>
+			<tr>
+				<td><label>Releváns tartalom az adott napon, és nem vett el helyet más fontosabb bejegyzéstől?</label></td>
+				<td><input type="text" name="relevans_tartalom" id="relevans_tartalom" value=0></td>
+			</tr>
+			<tr>
+				<td><label>Előre elkészített tartalom, későbbi megjelenítéssel?</label></td>
+				<td><input type="text" name="elore_irt" id="elore_irt" value=0></td>
+			</tr>
+			<tr>
+				<td><label>Modul Végső Értéke</label></td>
+				<td><input type="text" name="hatarido_vege" id="hatarido_vege" value=0 readonly>%</td>
+			</tr>
+		</table>
+		<p>
+		<table>
+			<tr>
+				<td><label>Önálló fejlődés mértéke</label></td>
+				<td><label>Érték</label></td>
+			</tr>
+			<tr>
+				<td><label>Érezhető minőségbeli javulás megléte?</label></td>
+				<td><input type="text" name="fejlod_minoseg" id="fejlod_minoseg" value=0></td>
+			</tr>
+			<tr>
+				<td><label>Eddig felmerült hibák javítása?</label></td>
+				<td><input type="text" name="hiba_javit" id="hiba_javit" value=0></td>
+			</tr>
+			<tr>
+				<td><label>Modul Végső Értéke</label></td>
+				<td><input type="text" name="fejlod_vege" id="fejlod_vege" value=0 readonly>%</td>
+			</tr>
+		</table>
+		<p>
+		<table id="eredmenyek">
+			<tr>
+				<td><label>Kritikus?</label></td>
+				<td><input type="text" name="krit" id="krit" readonly></td>
+			</tr>
+			<tr>
+				<td><label>Végső eredmény</label></td>
+				<td><input type="text" name="vege" id="vege" readonly>%</td>
+			</tr>
+			<tr>
+				<td><label>A kritikus hiba nélkül</label></td>
+				<td><input type="text" name="no_krit" id="no_krit" readonly>%</td>
+			</tr>
+			<tr>
+				<td><label>A szerkesztő, és az átnézett cikk a szerkesztőségi követelményeknek megfelelt?</label></td>
+				<td><input type="text" name="kovetelmeny" id="kovetelmeny" size="60" readonly></td>
+			</tr>
+		</table>
+		<p>
+		<input type="submit" value="Küld">
+		<p>
+		</form>
+	</body>
+</html>
