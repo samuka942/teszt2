@@ -1,0 +1,8 @@
+CREATE TABLE sablon (
+    id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    kerdes VARCHAR(200) NOT NULL,
+    min_ertek TINYINT NOT NULL DEFAULT 0,
+    max_ertek TINYINT NOT NULL,
+    tipus VARCHAR(5) NOT NULL,
+    mezo_nev VARCHAR(30) NOT NULL
+);
