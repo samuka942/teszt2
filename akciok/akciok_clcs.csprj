@@ -1,0 +1,52 @@
+<codestructure version="5.13">
+<phptree>
+<treenode node="../phpmailer/class.phpmailer.php;PHP:PHP Include;C:\wamp\www\akciok\overrite.php;f9;2;41;2;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+</treenode>
+<treenode node="../phpmailer/class.smtp.php;PHP:PHP Include;C:\wamp\www\akciok\overrite.php;f9;3;36;3;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+</treenode>
+<treenode node="aegan_belfold.php;PHP:PHP Include;C:\wamp\www\akciok\index.php;f11;23;28;23;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+</treenode>
+<treenode node="aegan_kulfold.php;PHP:PHP Include;C:\wamp\www\akciok\index.php;f11;26;28;26;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+</treenode>
+<treenode node="alitalia.php;PHP:PHP Include;C:\wamp\www\akciok\index.php;f11;44;23;44;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+</treenode>
+<treenode node="overrite.php;PHP:PHP Include;C:\wamp\www\akciok\index.php;f8;4;20;4;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+</treenode>
+<treenode node="ryanair_fix.php;PHP:PHP Include;C:\wamp\www\akciok\index.php;f11;41;26;41;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+</treenode>
+<treenode node="ryanair_napi.php;PHP:PHP Include;C:\wamp\www\akciok\index.php;f11;35;27;35;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+</treenode>
+<treenode node="ryanair_tobbnapos.php;PHP:PHP Include;C:\wamp\www\akciok\index.php;f11;38;32;38;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+</treenode>
+<treenode node="wizzair_all.php;PHP:PHP Include;C:\wamp\www\akciok\index.php;f11;29;26;29;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+</treenode>
+<treenode node="wizzair_club.php;PHP:PHP Include;C:\wamp\www\akciok\index.php;f11;32;27;32;;;;vpos;;v;;r;;d-1,-1;;b0,0;;m">
+</treenode>
+<treenode node="file_overrite;PHP:Class Name;C:\wamp\www\akciok\aegan_belfold.php;f0;2;1;36;;C:\wamp\www\akciok\overrite.php;f0;5;1;97;;;;vpos;;v;;r;;d19,5;;b0,0;;m">
+<treenode node="__construct;PHP:Function Name;C:\wamp\www\akciok\aegan_belfold.php;f8;10;2;12;;C:\wamp\www\akciok\overrite.php;f8;17;2;19;;C:\wamp\www\akciok\overrite.php;f8;17;2;19;;;;vpos;;v;;r;;d40,17;;b1,0;;mFile_name;;p">
+</treenode>
+<treenode node="ar_setter;PHP:Function Name;C:\wamp\www\akciok\overrite.php;f8;89;2;91;;;;vpos;;v;;r;;d31,89;;b1,0;;mar;;p">
+</treenode>
+<treenode node="article_saver;PHP:Function Name;C:\wamp\www\akciok\aegan_belfold.php;f8;28;2;34;;C:\wamp\www\akciok\overrite.php;f8;39;2;45;;C:\wamp\www\akciok\overrite.php;f8;39;2;45;;;;vpos;;v;;r;;d32,39;;b1,0;;m">
+</treenode>
+<treenode node="file_setter;PHP:Function Name;C:\wamp\www\akciok\aegan_belfold.php;f8;14;2;16;;C:\wamp\www\akciok\overrite.php;f8;21;2;23;;C:\wamp\www\akciok\overrite.php;f8;21;2;23;;;;vpos;;v;;r;;d30,21;;b1,0;;m">
+</treenode>
+<treenode node="Hatarido_Setter;PHP:Function Name;C:\wamp\www\akciok\aegan_belfold.php;f8;19;2;21;;C:\wamp\www\akciok\overrite.php;f8;26;2;28;;C:\wamp\www\akciok\overrite.php;f8;26;2;28;;;;vpos;;v;;r;;d43,26;;b1,0;;mhatarido;;p">
+</treenode>
+<treenode node="Idozona_setter;PHP:Function Name;C:\wamp\www\akciok\overrite.php;f8;35;2;37;;C:\wamp\www\akciok\overrite.php;f8;35;2;37;;;;vpos;;v;;r;;d41,35;;b1,0;;midozona;;p">
+</treenode>
+<treenode node="kezi_setter;PHP:Function Name;C:\wamp\www\akciok\overrite.php;f8;85;2;87;;;;vpos;;v;;r;;d36,85;;b1,0;;mmeret;;p">
+</treenode>
+<treenode node="kivetel_setter;PHP:Function Name;C:\wamp\www\akciok\overrite.php;f8;73;2;75;;;;vpos;;v;;r;;d41,73;;b1,0;;mkivetel;;p">
+</treenode>
+<treenode node="kupon_setter;PHP:Function Name;C:\wamp\www\akciok\overrite.php;f8;93;2;95;;;;vpos;;v;;r;;d37,93;;b1,0;;mkupon;;p">
+</treenode>
+<treenode node="szazalek_setter;PHP:Function Name;C:\wamp\www\akciok\overrite.php;f8;81;2;83;;;;vpos;;v;;r;;d43,81;;b1,0;;mszazalek;;p">
+</treenode>
+<treenode node="Utazasi_ido_setter;PHP:Function Name;C:\wamp\www\akciok\aegan_belfold.php;f8;23;2;26;;C:\wamp\www\akciok\overrite.php;f8;30;2;33;;C:\wamp\www\akciok\overrite.php;f8;30;2;33;;;;vpos;;v;;r;;d49,30;;b1,0;;meleje;;pvege;;p">
+</treenode>
+<treenode node="varos_setter;PHP:Function Name;C:\wamp\www\akciok\overrite.php;f8;77;2;79;;;;vpos;;v;;r;;d38,77;;b1,0;;mhonnan;;p">
+</treenode>
+</treenode>
+</phptree>
+</codestructure>

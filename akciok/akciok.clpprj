@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="C:\wamp\www\akciok\akciok.clpprj">
+	<settings><PM_URL><![CDATA[http://localhost/akciok/]]></PM_URL><PM_HOME_URL><![CDATA[http://localhost/akciok/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
+	</lastopfiles>
+	<errors version="5.11">
+	</errors>
+	<cakedata>
+	</cakedata>
+	<dplmenupath>
+	</dplmenupath><laravael>
+	</laravael><smartyassings>
+	</smartyassings><twigtemplate>
+	</twigtemplate><yiidata>
+	</yiidata>
+	<todoblock>
+	</todoblock>
+	<dbgurls>
+	</dbgurls>
+	<filescache>
+		<file name="C:\wamp\www\akciok\wizzair_club_kesz.txt" crc="1507579026"/>
+		<file name="C:\wamp\www\akciok\wizzair_club.txt" crc="1507575784"/>
+		<file name="C:\wamp\www\akciok\wizzair_club.php" crc="1507578861"/>
+		<file name="C:\wamp\www\akciok\wizzair_all_kesz.txt" crc="1507579005"/>
+		<file name="C:\wamp\www\akciok\wizzair_all.txt" crc="1507496416"/>
+		<file name="C:\wamp\www\akciok\wizzair_all.php" crc="1507578857"/>
+		<file name="C:\wamp\www\akciok\ryanair_tobbnapos_kesz.txt" crc="1507579241"/>
+		<file name="C:\wamp\www\akciok\ryanair_tobbnapos.txt" crc="1507577023"/>
+		<file name="C:\wamp\www\akciok\ryanair_tobbnapos.php" crc="1507579522"/>
+		<file name="C:\wamp\www\akciok\ryanair_napi_kesz.txt" crc="1507579051"/>
+		<file name="C:\wamp\www\akciok\ryanair_napi.txt" crc="1507576516"/>
+		<file name="C:\wamp\www\akciok\ryanair_napi.php" crc="1507578865"/>
+		<file name="C:\wamp\www\akciok\ryanair_fix_kesz.txt" crc="1507579388"/>
+		<file name="C:\wamp\www\akciok\ryanair_fix.txt" crc="1507577918"/>
+		<file name="C:\wamp\www\akciok\ryanair_fix.php" crc="1507578869"/>
+		<file name="C:\wamp\www\akciok\overrite.php" crc="1507629547"/>
+		<file name="C:\wamp\www\akciok\index.php" crc="1507579238"/>
+		<file name="C:\wamp\www\akciok\index.html" crc="1507578720"/>
+		<file name="C:\wamp\www\akciok\alitalia_kesz.txt" crc="1507579166"/>
+		<file name="C:\wamp\www\akciok\alitalia.txt" crc="1507578374"/>
+		<file name="C:\wamp\www\akciok\alitalia.php" crc="1507578873"/>
+		<file name="C:\wamp\www\akciok\aegan_kulfold_kesz.txt" crc="1507578986"/>
+		<file name="C:\wamp\www\akciok\aegan_kulfold.txt" crc="1507480700"/>
+		<file name="C:\wamp\www\akciok\aegan_kulfold.php" crc="1507578853"/>
+		<file name="C:\wamp\www\akciok\aegan_belfold_kesz.txt" crc="1507578923"/>
+		<file name="C:\wamp\www\akciok\aegan_belfold.txt" crc="1507402960"/>
+		<file name="C:\wamp\www\akciok\aegan_belfold.php" crc="1507578849"/>
+	</filescache>
+</project>

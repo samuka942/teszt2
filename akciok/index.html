@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Légitársaságok Akció Sablonok</title>
+		<script lang="JavaScript">
+		function _ad(){
+			if(document.getElementById("aegan_bel").selected){
+				document.getElementById("plusz_mezo").innerHTML = "";
+			}
+			
+			if(document.getElementById("aegan_kul").selected){
+				document.getElementById("plusz_mezo").innerHTML =
+				"Kérem adja meg az akcióban szereplő városokat: <input type='text' name='honnan' size='75'><p>Kérem adja meg a kivételekben szereplő adatokat:<br><textarea rows='10' cols='60' name='kivetel'></textarea>";
+				}
+				
+			if(document.getElementById("wizz_all").selected || document.getElementById("wizz_club").selected){
+				document.getElementById("plusz_mezo").innerHTML = "Kérem adja meg az akcióban szereplő százalékot: <input type='text' name='szazalek'><p>kézipoggyászt méretei:<select name='KEZI'><option>-----Kérem Válasszon----</option><option value='(max: 42 x 32 x 25 cm)'>max: 42 x 32 x 25 cm</option></select>";
+			}
+			
+			if(document.getElementById("ryan_napi").selected || document.getElementById("ryan_tobb").selected){
+				document.getElementById("plusz_mezo").innerHTML = "Kérem adja meg az akcióban szereplő százalékot: <input type='text' name='szazalek'>";
+			}
+			
+			if(document.getElementById("ryan_fix").selected){
+				document.getElementById("plusz_mezo").innerHTML = "Kérem adja meg az akcióban szereplő árat: <input type='text' name='ar'>";
+			}
+			
+			if(document.getElementById("ali").selected){
+				document.getElementById("plusz_mezo").innerHTML = "Kérem adja meg az akcióban szereplő százalékot: <input type='text' name='szazalek'><p>Kérem adja meg a kivételekben szereplő adatokat:<br><textarea rows='10' cols='60' name='kivetel'></textarea><p>Kérem adja meg az akcióban használni kívánt kupont: <input type='text' name='kupon'>";
+			}
+		}
+		</script>
+	</head>
+	<body bgcolor="black" text="white">
+		<form action="index.php" method="post">
+		<p>
+			<h2>Sablon adatok:</h2>
+		<p>Melyik légitársaság?
+			<select name="FILE" onchange="_ad()">
+				<option>-----Kérem Válasszon----</option>
+				<option value="aegan_belfold.txt" id="aegan_bel">Aegan Belföld</option>
+				<option value="aegan_kulfold.txt" id="aegan_kul">Aegan Külföld</option>
+				<option value="wizzair_all.txt" id="wizz_all">WizzAir mindenkinek</option>
+				<option value="wizzair_club.txt" id="wizz_club">WizzAir Club tagoknak</option>
+				<option value="ryanair_napi.txt" id="ryan_napi">%-os RyanAir napi</option>	
+				<option value="ryanair_tobbnapos.txt" id="ryan_tobb">%-os RyanAir többnapos</option>
+				<option value="ryanair_fix.txt" id="ryan_fix">RyanAir fixáras</option>
+				<option value="alitalia.txt" id="ali">Alitália</option>				
+			</select>
+		<p>Melyik Időzóna?
+			<select name="IDOZONA">
+				<option>-----Kérem Válasszon----</option>
+				<option value="EEST-ig (Kelet-Európai Nyári Idő)">EEST</option>
+				<option value="EET (Kelet-Európai Téli Idő)">EET</option>
+				<option value="GMT (Greenwich Mean Time)">GMT</option>
+				<option value="BST (British Summer Time)">BST</option>
+				<option value="CET (Közép-Európai Téli Idő)">CET</option>
+				<option value="CEST (Közép-Európai Nyári Idő)">CEST</option>
+			</select>
+		<p>
+			Foglalási határidő:
+			<input type="text" name="hatarido" size="20">
+		<p>
+			Az akcióban említett utazási idő kezdete:
+			<input type="text" name="ido_kezdete" size="20">		
+		<p>
+			Az akcióban említett utazási idő vége:
+			<input type="text" name="ido_vege" size="20">	
+		<p>
+			<div id="plusz_mezo"></div>
+		<p>
+			<input type="submit" value="Készít" />
+		</form>
+	</body>
+</html>
