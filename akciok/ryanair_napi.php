@@ -15,7 +15,6 @@
 		$file->Utazasi_ido_setter($ido_kezdete,$ido_vege);
 		$file->szazalek_setter($szazalek);
 		$file->article_saver();
-		$file->email_sender();
 	}
 
 ?>

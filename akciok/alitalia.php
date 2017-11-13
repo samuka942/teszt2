@@ -21,7 +21,6 @@ if(empty($_POST['hatarido']) || empty($_POST['kupon']) || empty($_POST['IDOZONA'
 			$file->kivetel_setter($kivetel);
 		}
 		$file->article_saver();
-		$file->email_sender();
 	}
 
 ?>

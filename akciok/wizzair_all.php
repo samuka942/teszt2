@@ -17,7 +17,6 @@
 		$file->szazalek_setter($szazalek);
 		$file->kezi_setter($kezi);
 		$file->article_saver();
-		$file->email_sender();
 	}
 
 ?>

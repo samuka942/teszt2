@@ -44,12 +44,25 @@ switch($File_name){
 	case "alitalia.txt":
 		require("alitalia.php");
 		break;
+	case "aegean_hertz.txt":
+		require("aegean_hertz.php");
+		break;
+	case "cro_air_car.txt":
+		require("cro_air_car.php");
+		break;
+	case "icelandair.txt":
+		require("icelandair.php");
+		break;
+	case "swiss.txt":
+		require("swiss.php");
+		break;
 	
 	default:
 		break;
 }
 
-
+$email = $_POST['email'];
+$file->email_sender($email);
 
 ?>
 </body>

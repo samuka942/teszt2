@@ -29,6 +29,13 @@
 			if(document.getElementById("ali").selected){
 				document.getElementById("plusz_mezo").innerHTML = "Kérem adja meg az akcióban szereplő százalékot: <input type='text' name='szazalek'><p>Kérem adja meg a kivételekben szereplő adatokat:<br><textarea rows='10' cols='60' name='kivetel'></textarea><p>Kérem adja meg az akcióban használni kívánt kupont: <input type='text' name='kupon'>";
 			}
+			
+			if(document.getElementById("cac").selected){
+				document.getElementById("plusz_mezo").innerHTML = "Kérem adja meg az akcióban szereplő százalékot: <input type='text' name='szazalek'><p>Kérem adja meg a foglalás kezdeti időpontját:<input type='text' name='ido_elso'><p>Kérem adja meg a foglalás záró időpontját <input type='text' name='ido_masod'>";
+			}
+			if(document.getElementById("ice").selected){
+				document.getElementById("plusz_mezo").innerHTML = "Kérem adja meg a második időpont kezdeti időpontját:<input type='text' name='ido_elso'><p>Kérem adja meg a második időpont záró időpontját <input type='text' name='ido_masod'>";
+			}
 		}
 		</script>
 	</head>
@@ -46,7 +53,11 @@
 				<option value="ryanair_napi.txt" id="ryan_napi">%-os RyanAir napi</option>	
 				<option value="ryanair_tobbnapos.txt" id="ryan_tobb">%-os RyanAir többnapos</option>
 				<option value="ryanair_fix.txt" id="ryan_fix">RyanAir fixáras</option>
-				<option value="alitalia.txt" id="ali">Alitália</option>				
+				<option value="alitalia.txt" id="ali">Alitália</option>
+				<option value="aegean_hertz.txt">Aegean + Hertz Akció</option>
+				<option value="cro_air_car.txt" id="cac">Croatia-Arilines-Cartrawler Akciók</option>
+				<option value="icelandair.txt" id="ice">IcelandAir Akciók</option>
+				<option value="swiss.txt" id="ice">Swiss Akciók</option>			
 			</select>
 		<p>Melyik Időzóna?
 			<select name="IDOZONA">
@@ -69,6 +80,8 @@
 			<input type="text" name="ido_vege" size="20">	
 		<p>
 			<div id="plusz_mezo"></div>
+		<p>
+			Email: <input type="text" name="email" size="30">
 		<p>
 			<input type="submit" value="Készít" />
 		</form>

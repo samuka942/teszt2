@@ -41,11 +41,11 @@ class file_overrite{
 		$saver_file = substr($this->file_name,0,stripos($this->file_name,"."))."_kesz.txt";
 		fopen($saver_file,"w");
 		if(file_put_contents($saver_file,$this->f)){
-			echo "A cikk törzse elkészült!";
+			echo "A cikk törzse elkészült!<p><a href='index.html'>Vissza a kitöltéshez</a>";
 		}
 	}
 	
-	/*public function email_sender(){
+	public function email_sender($email){
 		$error;
 	$mail = new PHPMailer();  // create a new object
 	$mail->CharSet = 'UTF-8';
@@ -54,13 +54,13 @@ class file_overrite{
 	$mail->SMTPAuth = true;  // authentication enabled
 	$mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for GMail
 	$mail->Host = 'smtp.gmail.com';
-	$mail->Port = 465; //587 465
+	$mail->Port = "465"; //587 465
 	$mail->Username = "samu942@gmail.com";  
 	$mail->Password = "KurtaKoz@11";           
 	$mail->SetFrom("samu.gyorgy@mndsblog.com", "Samu György");
 	$mail->Subject = "Akciók";
 	$mail->Body = "Az Ön által készített sablon kitöltése sikeres!\nA mellékletből le tudja tölteni!\nÜdvözlettel:\nSamu György";
-	$mail->AddAddress("szutor.mark@mndsblog.com");
+	$mail->AddAddress($email);
 	$mail->addAttachment($saver_file = substr($this->file_name,0,stripos($this->file_name,"."))."_kesz.txt");
 	if(!$mail->Send()) {
 		$error = 'Mail error: '.$mail->ErrorInfo; 
@@ -69,7 +69,7 @@ class file_overrite{
 		$error = 'Message sent!';
 		return true;
 		}
-	}*/
+	}
 	
 	public function kivetel_setter($kivetel){
 		$this->f = str_replace("_kivetelek_",$kivetel,$this->f);
@@ -93,6 +93,14 @@ class file_overrite{
 	
 	public function kupon_setter($kupon){
 		$this->f = str_replace("_kupon_",$kupon,$this->f);
+	}
+	
+	public function elso_plusz_ido_setter($ido_elso){
+		$this->f = str_replace("_ido_elso_",$ido_elso,$this->f);
+	}
+	
+	public function masod_plusz_ido_setter($ido_masod){
+		$this->f = str_replace("_ido_masod_",$ido_masod,$this->f);
 	}
 	
 }

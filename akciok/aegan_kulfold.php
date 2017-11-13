@@ -20,7 +20,6 @@ if(empty($_POST['hatarido']) || empty($_POST['IDOZONA']) || empty($_POST['ido_ke
 		$file->Utazasi_ido_setter($ido_kezdete,$ido_vege);
 		$file->varos_setter($honnan);
 		$file->article_saver();
-		$file->email_sender();
 	}
 
 ?>
