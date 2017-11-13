@@ -69,7 +69,7 @@ select:focus{
   	border-style: hidden;
 }
 textarea{
-	background-color: #ff4ae9;
+	background-color: lightblue;
 	color: white;
 	border-radius: 15px;
 	border-style: hidden;

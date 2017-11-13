@@ -3,12 +3,12 @@
 class Kerdoiv{
 		
 		private $server = "localhost";
-		private $user = "root";
-		private $pass = "";
+		private $user = "id3474736_samuka942";
+		private $pass = "KurtaKoz@11";
 		
 		public function __construct(){
-			$connect = @mysql_connect($this->server,$this->user,$this->pass) or exit("Nem sikerült kapcsolódni a MySQL szerverhez!".mysql_error);
-			@mysql_select_db("teszt") or exit("Nem sikerült megnyitni az adatbázist!".mysql_error);
+			$connect = mysqli_connect($this->server,$this->user,$this->pass);
+			@mysql_select_db("id3474736_ertekelolap") or exit("Nem sikerült megnyitni az adatbázist!".mysql_error);
     		@mysql_query("SET NAMES 'utf8'");
 		}
 		

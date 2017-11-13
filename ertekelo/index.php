@@ -5,7 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<script src="sctipts.js" lang="JavaScript"></script>
 		<?php 
-			require("teszt.php");
+			require("kerdoiv.php");
 			
 			$kerdoiv = new Kerdoiv();
 			
