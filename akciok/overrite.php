@@ -41,7 +41,7 @@ class file_overrite{
 		$saver_file = substr($this->file_name,0,stripos($this->file_name,"."))."_kesz.txt";
 		fopen($saver_file,"w");
 		if(file_put_contents($saver_file,$this->f)){
-			echo "A cikk törzse elkészült!<p><a href='index.html'>Vissza a kitöltéshez</a>";
+			echo "A cikk törzse elkészült!<p><a href='fooldal.php'>Vissza a kitöltéshez</a>";
 		}
 	}
 	

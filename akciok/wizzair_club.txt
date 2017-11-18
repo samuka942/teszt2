@@ -11,7 +11,7 @@ Join WIZZ Discount Club and save!
 
 
 
-<div class="player-unavailable"><h1 class="message">An error occurred.</h1><div class="submessage"><a href="http://www.youtube.com/watch?v=rGvv7bCBXmk" target="_blank">Try watching this video on www.youtube.com</a>, or enable JavaScript if it is disabled in your browser.</div></div>
+<div class='player-unavailable'><h1 class='message'>An error occurred.</h1><div class='submessage'><a href='http://www.youtube.com/watch?v=rGvv7bCBXmk' target='_blank'>Try watching this video on www.youtube.com</a>, or enable JavaScript if it is disabled in your browser.</div></div>
 És akkor térjünk rá a kötelező szövegrészre. Jöjjenek hát a foglalási és utazási feltételek!
 A _szazalek_ kedvezmény a teljes jegyárra vonatkozik, ami már magában foglalja a viteldíjat, a repülőtéri illetékeket, és adókat, valamint egy darab kis méretű kézipoggyászt _kezi_, azonban nem tartalmazza az adminisztrációs díjat. A _szazalek_ kedvezmény csak és kizárólag a wizzair.com, vagy a Wizz Mobil App-on keresztül megkötött új foglalásokra érvényes. Amennyiben azokat _hatarido_ _idozona_-ig elkészítitek. Az utazási időszak _ido_eleje_ és _ido_vege_ közé kell essen.. Az ajánlat csak és kizárólag a már meglévő, vagy az akció időtartama alatt tagsátot váltó Wizz Discount Club tagokra vonatkozik.
 A tájékoztatás nem teljeskörű, további részletekért, és feltételekért látogassátok meg a wizzair.com weboldalt.

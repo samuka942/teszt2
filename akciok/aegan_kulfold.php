@@ -1,6 +1,6 @@
 <?php
 
-if(empty($_POST['hatarido']) || empty($_POST['IDOZONA']) || empty($_POST['ido_kezdete']) || empty($_POST['ido_vege']) || empty($_POST['kivetel'])){
+if(empty($_POST['hatarido']) || empty($_POST['IDOZONA']) || empty($_POST['ido_kezdete']) || empty($_POST['ido_vege'])){
 		exit("Nincs kitöltve minden adat!<p><a href='index.html'>Vissza a kitöltéshez</a>".$zaroTag);
 	}
 	else{
@@ -12,6 +12,10 @@ if(empty($_POST['hatarido']) || empty($_POST['IDOZONA']) || empty($_POST['ido_ke
 		
 		if(!empty($_POST['kivetel'])){
 			$kivetel = $_POST['kivetel'];
+			$file->kivetel_setter($kivetel);
+		}
+		else{
+			$kivetel = " ";
 			$file->kivetel_setter($kivetel);
 		}
 	

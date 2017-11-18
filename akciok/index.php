@@ -1,20 +1,13 @@
+<?php
+	session_start();
+?>
 <html>
 <body bgcolor="black" text="white">
 <?php
 
 require"overrite.php";
 
-
-$zaroTag = '</body></html>';
-    if($_SERVER['REQUEST_METHOD'] != 'POST') {
-        die('Helytelen metódus!' . $zaroTag);
-    }
-
-if(!isset($_POST['FILE'])){
-	exit("Nincs fájl kiválasztva!" . $zaroTag);
-}
-
-$File_name = $_POST['FILE'];
+$File_name = $_SESSION['file'];
 
 $file = new file_overrite($File_name);
 $file->file_setter($File_name);
@@ -61,7 +54,7 @@ switch($File_name){
 		break;
 }
 
-$email = $_POST['email'];
+$email = $_SESSION['email'];
 $file->email_sender($email);
 
 ?>

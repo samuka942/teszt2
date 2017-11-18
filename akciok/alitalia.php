@@ -20,6 +20,10 @@ if(empty($_POST['hatarido']) || empty($_POST['kupon']) || empty($_POST['IDOZONA'
 			$kivetel = $_POST['kivetel'];
 			$file->kivetel_setter($kivetel);
 		}
+		else{
+			$kivetel = " ";
+			$file->kivetel_setter($kivetel);
+		}
 		$file->article_saver();
 	}
 
